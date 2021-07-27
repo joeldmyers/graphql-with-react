@@ -1,6 +1,6 @@
 # graphql-with-react
 
-Following along with FEM client-side GraphQL with React. 
+Following along with FEM client-side GraphQL with React, by Scott Moss - https://github.com/Hendrixer. Reference repo here - https://github.com/FrontendMasters/fullstack-graphql/tree/client 
 
 Idea is to have the data on the server modeled after props for front-end, have props and server data be the exact same shape. Eliminate need for transformations. This was where it started. 
 
@@ -129,3 +129,7 @@ This essentially serves as the client-side state management -- caching and stori
 - By default with Apollo, all nodes (i.e., all objects returned by a GraphQL API). are stored flat by an automatically generated (by Apollo) unique ID
 - Unique ID is defaulted to .id or ._id from nodes. You can change this.
 - Every node should send a .id or ._id or none at all. Or you can customize this logic.
+
+Apollo uses this along with the `__typename` to cache into a flattened object.
+
+So always have an ID. Otherwise you'd need to have some workaround to use something else. Always have an ID. Or else have no queries have IDs (and then you'd need to provide a function to tell Apollo how to generate an ID). But for starters, just always have an ID. 
