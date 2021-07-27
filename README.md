@@ -8,9 +8,9 @@ It's evolved since then. It's its own language / process to build schema for any
 
 ## Getting Started
 
-Use node >= v6 but <14 (14 will break it). Currently using Node v12.22.3
+Use node >= v6.
 
-Be sure packages are installed, using `yarn`. Then run `yarn app` and go to `http://localhost:1234`
+Be sure packages are installed using `yarn`. Then run `yarn app` and go to `http://localhost:1234`
 
 
 ## GraphQL Definition
