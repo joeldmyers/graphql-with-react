@@ -65,8 +65,42 @@ query AllCharacter($page: Int) {
 
 Arguments must start with a dollar sign.
 
-Then you can type query variables in GraphQL playground at the bottom -- 
+Then you can type query variables in GraphQL playground at the bottom:
 
 ```
 { "page": 1 }
 ```
+
+## Aliasing
+
+You can alias properties that you're getting back, to avoid naming collisions, for ex.
+
+```
+
+query AllCharacter($page: Int) {
+  characters(page: $page) {
+    results {
+      fullName: name
+      id
+    }
+  }
+}
+```
+
+So put whatever you want it to be called to the left. It will return 
+
+```
+{
+  "data": {
+    "characters": {
+      "results": [
+        {
+          "fullName": "Rick Sanchez",
+          "id": "1"
+        }, ... 
+      ]
+    }
+  }
+}
+```
+
