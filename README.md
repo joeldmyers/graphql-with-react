@@ -6,6 +6,13 @@ Idea is to have the data on the server modeled after props for front-end, have p
 
 It's evolved since then. It's its own language / process to build schema for anything. 
 
+## Getting Started
+
+Use node >= v6 but <14 (14 will break it). Currently using Node v12.22.3
+
+Be sure packages are installed, using `yarn`. Then run `yarn app` and go to `http://localhost:1234`
+
+
 ## GraphQL Definition
 GraphQL is a spec that describes a declarative query language that your clients can use to ask an API for the exact data they want. This is achieved by creating a strongly typed Schema for your API, ultimate flexibility in how your API can resolve data, and client queries validated against your Schema.
 
