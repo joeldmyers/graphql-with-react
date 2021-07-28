@@ -142,3 +142,17 @@ This essentially serves as the client-side state management -- caching and stori
 Apollo uses this along with the `__typename` to cache into a flattened object.
 
 So always have an ID. Otherwise you'd need to have some workaround to use something else. Always have an ID. Or else have no queries have IDs (and then you'd need to provide a function to tell Apollo how to generate an ID). But for starters, just always have an ID.
+
+## General setup / steps:
+
+1. Get client set up to hook into root resolver of whatever API endpoint you want to install:
+
+2. Wrap your root app in an Apollo Provider:
+
+```
+  <ApolloProvider client={client}>
+  <App />
+  </ApolloProvider>
+```
+
+Always get ID when querying.
