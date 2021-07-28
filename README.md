@@ -1,10 +1,6 @@
-# graphql-with-react
+# GraphQL / React / Apollo
 
 Following along with FEM client-side GraphQL with React, by Scott Moss - https://github.com/Hendrixer. Reference repo here - https://github.com/FrontendMasters/fullstack-graphql/tree/client
-
-Idea is to have the data on the server modeled after props for front-end, have props and server data be the exact same shape. Eliminate need for transformations. This was where it started.
-
-It's evolved since then. It's its own language / process to build schema for anything.
 
 ## Getting Started
 
@@ -15,6 +11,12 @@ Be sure packages are installed using `yarn`.
 Then run `yarn app` and go to `http://localhost:1234`
 
 In a separate terminal window, run `yarn server` to run the GraphQL server on port 4000.
+
+## GraphQL Motivation
+
+The idea with GraphQL is to have the data on the server modeled after props for front-end, have props and server data be the exact same shape. Eliminate need for transformations from what API returns to front-end needs. This was where it started.
+
+It's evolved since then. It's its own language / process to build schema for anything.
 
 ## GraphQL Definition
 
